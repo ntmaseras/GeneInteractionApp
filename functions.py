@@ -28,7 +28,7 @@ def create_network(correlation_data,G):
         else:
             # If the edge already exists, update the correlation (or any other attributes)
             G[source_gene][target_gene]['correlation'] = correlation
-   
+       
     return G
 
 
