@@ -51,3 +51,10 @@ graph TD;
     corrsFiles-->net
 
 ```
+## Acknowledgements
+
+The Gene Interaction App acknowledges the following projects, resources, and individuals for their contributions:
+
+- **DepMap Project:** Acknowledgment to the DepMap project for providing the essential datasets and resources for correlation analysis.
+- **Contributors:** Appreciation to all contributors who have helped improve and develop this app.
+
