@@ -21,6 +21,14 @@ graph TD;
     data
     end
 
+    subgraph Preprocessing
+    genes
+    log1
+    log2
+    achilles
+    data
+    end
+
     subgraph Functions
     corrPy
     corrSh
@@ -44,6 +52,5 @@ graph TD;
     function-->net
     function-->data
     app-->data
-
 
 ```
