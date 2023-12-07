@@ -11,19 +11,15 @@ from dash import callback_context
 from functions import find_common_neighbors,filter_network,scatterplot_gene
 
 import plotly.express as px
-df = px.data.iris()
-scatterplot_1 = px.scatter(df, x="sepal_width", y="sepal_length", color="species",
-                 size='petal_length', hover_data=['petal_width'])
-scatterplot_2 = px.scatter(df, x="sepal_width", y="sepal_length", color="species",
-                 size='petal_length', hover_data=['petal_width'])
 from PIL import Image
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
-NETWORK_FILE = 'app/network/gene_correlation.pickle'
+NETWORK_FILE = 'network/gene_correlation.pickle'
 if os.path.exists(NETWORK_FILE):
     with open(NETWORK_FILE, 'rb') as file:
         G = pickle.load(file)
+        print(len(G.nodes()))
 else:
     G = None
 

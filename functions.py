@@ -71,11 +71,6 @@ def filter_network(input_value,THRESHOLD):
 
 
 
-
-
-def get_data_in_dataframe(data):
-    return ""
-
 import plotly.graph_objs as go
 
 def scatterplot_gene(input_value, THRESHOLD):
@@ -92,6 +87,7 @@ def scatterplot_gene(input_value, THRESHOLD):
             ['SELECTED_GENE', 'EVALUATED_GENE', 'CORRELATION', 'PVALUE', 'chromosome', 'avg_pos']
         ].drop_duplicates(subset='EVALUATED_GENE', keep='first')
         data = data[data['chromosome'] != 'chrX']
+        
         data['nchromosome'] = data.chromosome.str[3:].astype(int)
         data = data.sort_values(by=['nchromosome', 'avg_pos'])
         data['axis'] = data.nchromosome.astype(str) + '_' + data.avg_pos.astype(str)
