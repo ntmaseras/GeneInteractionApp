@@ -1,4 +1,5 @@
 # GeneInteractionApp
+```mermaid
 graph TD;
     preprocess[preprocessing]
     app[app.py]
@@ -17,3 +18,4 @@ graph TD;
     function-->net
     function-->data
     app-->data
+```
