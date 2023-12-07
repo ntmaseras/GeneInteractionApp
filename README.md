@@ -1,21 +1,29 @@
 # GeneInteractionApp
 ```mermaid
 graph TD;
+    genes[genes.txt]
+    log1[execution.log]
+    log2[completed_genes.txt]
     preprocess[preprocessing]
-    app[app.py]
-    corr[correlations]
+    corrPy[correlations.py]
+    corrSh[correlations_batch.sh]
     data[data]
     function[functions.py]
     net[generate_network.py]
+    app[app.py]
 
-    data-->preprocess
+    genes-->corrSh
+    log1-->corrSh
+    log2-->corrSh
+    corrSh-->corrPy
+    corrPy-->preprocess
     preprocess-->corr
     preprocess-->log
-    log-- logs -->
     corr-- gene_correlation.pickle -->
     net-- processed_genes.txt -->
     function-->app
     function-->net
     function-->data
     app-->data
+
 ```
