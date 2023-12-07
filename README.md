@@ -1,4 +1,19 @@
 # GeneInteractionApp
+-- IN PROGRESS --
+The Gene Interaction App is an interactive tool designed to explore genetic interactions post CRISPR knockout, allowing users to investigate how the absence of specific genes affects other genes within cancer cell lines. Based on the DepMap project, this application enables users to select and analyze two genes, observing the correlations between these genes and identifying shared correlations post-gene knockout.
+
+## Usage
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/ntmaseras/GeneInteractionApp.git
+    ```
+
+2. **Run the Application:**
+    - Install necessary dependencies (provided environment.yml).
+    - Execute the main application file `app.py`.
+    ```bash
+     python3 app.py
+    ```
 ```mermaid
 graph TD;
     genes[data/genes.txt]
