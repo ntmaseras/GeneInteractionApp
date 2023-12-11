@@ -10,8 +10,11 @@ The Gene Interaction App is an interactive tool designed to explore genetic inte
 
 2. **Run the Application:**
     - For testing, only some genes available.
-    - Install necessary dependencies (provided environment.yml).
-    - Execute the main application file `app.py`.
+    - Install necessary dependencies (provided environment.yml). 
+      ```bash
+    conda env create -f environment.yml
+    ```
+    - Execute the main application file `app.py`. 
     ```bash
      python3 app.py
     ```
