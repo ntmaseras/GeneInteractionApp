@@ -55,6 +55,14 @@ graph TD;
     corrsFiles-->net
 
 ```
+
+3. **Examples**
+   
+   3.1 DROSHA-DICER1
+   ![](DROSHA-DICER-XPO5.png)
+   
+   3.2 GART-PPAT
+   ![](gart-paics.png)
 ## Acknowledgements
 
 The Gene Interaction App acknowledges the following projects, resources, and individuals for their contributions:
