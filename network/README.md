@@ -103,3 +103,6 @@ Ensure that you have the necessary dependencies installed and the appropriate pe
     python3 app.py
     ```
 
+![App Screenshot](./summaryVC.png)
+
+
