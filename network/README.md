@@ -3,8 +3,7 @@
 
 Follow these steps to run the app in a GenomeDK environment:
 
-```
-   conda create --name rnametabolism pandas networkx dash-bio dasy_cytoscape matplotlib -c bioconda
+```conda create --name rnametabolism pandas networkx dash-bio dasy_cytoscape matplotlib -c bioconda
    conda config --show channels
 
 1. **Navigate to the App Directory:**
