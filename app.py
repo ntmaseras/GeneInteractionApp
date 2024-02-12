@@ -19,7 +19,6 @@ NETWORK_FILE = 'network/gene_correlation.pickle'
 if os.path.exists(NETWORK_FILE):
     with open(NETWORK_FILE, 'rb') as file:
         G = pickle.load(file)
-        print(len(G.nodes()))
 else:
     G = None
 
@@ -28,8 +27,7 @@ node_positions = {}
 elements = []
 cytoscape = cyto.Cytoscape(
     id='network-graph',
-    layout={'name': 'cose',
-        'positions': node_positions},
+    layout={'name': 'cose'},
     style={
         'width': '100%',
         'height': '600px',
