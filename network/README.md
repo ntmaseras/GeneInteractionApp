@@ -5,6 +5,7 @@ Follow these steps to run the app in a GenomeDK environment:
 
 ```
 conda create --name rnametabolism pandas networkx dash-bio dash_cytoscape matplotlib -c bioconda
+conda install networkx
    conda config --show channels
    conda config --add channels conda-forge
    conda config --add channels bioconda
