@@ -10,7 +10,8 @@ Follow these steps to run the app in a GenomeDK environment:
 
 2. **Start an Interactive Bash Session in the Cluster:**
 
-   ```bash
+   ```conda create -n rnametabolismg -c kaspermunch slurm-jupyter                                   
+   bash
    srun --pty /bin/bash
 
 3. **Activate the Conda Environment:**
